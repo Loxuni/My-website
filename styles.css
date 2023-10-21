@@ -1,15 +1,46 @@
+/* Reset noen standard nettleserstiler */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Legger til en bakgrunnsfarge på hele siden */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
 }
 
-h1 {
-    color: blue;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: green;
+/* Header-stiler */
+header {
+    background: #50b3a2;
     color: white;
-    border: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+}
+
+/* Seksjon-stiler */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+/* Footer-stiler */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
