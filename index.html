@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loxuni</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -9,47 +10,64 @@
 
     <!-- Header -->
     <header>
+        <div class="nav-wrapper">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="articles.html">Articles</a></li>
+                <li><a href="index.html"><img src="home-icon.jpg" alt="Home" id="home-icon"></a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="dropdown">
+                    <a href="articles.html" class="dropbtn">ARTICLES</a>
+                    <ul class="dropdown-content">
+                        <li><a href="article1.html">ALL ARTICLES</a></li>
+                        <li><a href="article2.html">STUDYING</a></li>
+                        <li><a href="tech.html">TECH</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html">PROJECTS</a></li>
             </ul>
         </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
+        <!-- Home Section -->
         <section id="home">
             <h1>I'm Magnus. I'm a student of computer engineering</h1>
             <p>This is a website I have created to share what I have done outside of my studies</p>
         </section>
 
-        <!-- Introduction Sections (Repetitive, consider changing content or ids) -->
-        <section id="introduction">
-            <a href="introduction.html" class="clickable-text">
-                <h2>Introduction</h2>
-            </a>
-        </section>
-        <!-- Repeating Sections: consider revising -->
-        <!-- ... -->
-        <section id="introduction">
-            <a href="introduction.html" class="clickable-text">
-                <h2>Introduction</h2>
-            </a>
-        </section>
+       <!-- Introduction Section -->
+       <section id="introduction">
+        <a href="introduction.html" class="clickable-text">
+            <h2>Introduction</h2>
+            <p>Learn more about my journey and how I came to be where I am.</p>
+        </a>
+    </section>
 
-        <section id="introduction">
-            <a href="introduction.html" class="clickable-text">
-                <h2>Introduction</h2>
-            </a>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <a href="projects.html" class="clickable-text">
+            <h2>Projects</h2>
+            <p>Check out the projects I've worked on!</p>
+        </a>
+    </section>
 
-        <section id="introduction">
-            <a href="introduction.html" class="clickable-text">
-                <h2>Introduction</h2>
-            </a>
-        </section>
+    <!-- Blog Section -->
+    <section id="blog">
+        <a href="blog.html" class="clickable-text">
+            <h2>Blog</h2>
+            <p>Read some of the articles I have written to share my experiences.</p>
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <a href="contact.html" class="clickable-text">
+            <h2>Contact</h2>
+            <p>Want to get in touch? Reach out to me here.</p>
+        </a>
+    </section>
 
     </main>
 
@@ -62,7 +80,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript File -->
     <script src="script.js"></script>
-
 </body>
 </html>
